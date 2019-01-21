@@ -84,6 +84,7 @@ class DefaultController extends Controller
             'js',
             'vue',
             'html',
+            'php',
             'twig',
         ];
         $this->optionsKey = CraftGonzo::getInstance()->getSettings()->optionsKey ? CraftGonzo::getInstance()->getSettings()->optionsKey : 'opt';
@@ -157,6 +158,7 @@ class DefaultController extends Controller
                             case 'css':
                             case 'vue':
                             case 'scss':
+                            case 'php':
                                 $assets[] = $file;
                                 break;
                         }

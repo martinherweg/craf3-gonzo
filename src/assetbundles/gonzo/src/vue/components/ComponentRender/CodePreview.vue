@@ -91,7 +91,6 @@ export default {
 
       window.axios.post('patternlib/getfilerender/', formData).then(({ data }) => {
         this.variantRender = data;
-        console.log(data);
       });
     },
   },
