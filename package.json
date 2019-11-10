@@ -4,7 +4,9 @@
     "webpack": "webpack --config=webpack/webpack.config.babel.js --env.development --mode=development",
     "production": "webpack --hide-modules --config=webpack/webpack.config.babel.js --env.production --mode=production",
     "test": "jest",
-    "webpack:analyze": "webpack-bundle-analyzer webpack/stats.json src/assetbundles/gonzo/dist/"
+    "webpack:analyze": "webpack-bundle-analyzer webpack/stats.json src/assetbundles/gonzo/dist/",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "husky": {
     "hooks": {
@@ -18,6 +20,10 @@
     "@babel/plugin-transform-async-to-generator": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/register": "^7.0.0",
+    "@storybook/addon-actions": "^5.2.4",
+    "@storybook/addon-links": "^5.2.4",
+    "@storybook/addons": "^5.2.4",
+    "@storybook/vue": "^5.2.4",
     "@webpack-cli/add": "^0.1.2",
     "@webpack-cli/info": "^0.1.2",
     "autoprefixer": "^9.1.5",
@@ -77,6 +83,7 @@
     "animated-scroll-to": "^1.2.2",
     "axios": "^0.18.0",
     "babel-plugin-prismjs": "^1.0.2",
+    "babel-preset-vue": "^2.0.2",
     "baukasten-grid": "^1.0.10",
     "font-awesome": "^4.7.0",
     "include-media": "^1.4.9",
